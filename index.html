@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form 2</title>
+    <style>
+
+        body{
+         
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: aqua;
+        }
+        header{
+            font-size: 20px;
+            font-weight: 600;
+        }
+        button{
+            color:white;
+            background-color: green;
+            padding: 5px 15px;
+            font-size: 15px;
+            font-weight: 600;
+            border-radius: 1mm;
+        }
+        button:hover{
+            color: green;
+            background-color: white;
+        }
+       
+        form input{
+            border: 1px solid black;
+            border-radius: 1mm;
+            padding: 4px 20px;
+        }
+        
+    </style>
+</head>
+<body>
+   <header>Application Form</header> 
+  
+   <form>
+    <h4>Personal Details</h4>
+    <label for="Name">Full Name Of Applicant :</label>
+    <input type="text" id="Name"/><br><br>
+    <label for="Email">Applicant's Email :</label>
+    <input type="text" id="Email" style="margin-left: 40px;"><br><br>
+    <label for="DOB">Date Of Birth :</label>
+    <input type="date" id="DOB" style="margin-left: 70px;"> <br><br>
+    <label >Gender</label><br><br>
+
+
+    <label for="male" >Male :</label>
+    <input type="radio" id="male" name="Gender">
+    <br>
+    <label for="Female">Female :</label>
+    <input type="radio" id="Female" name="Gender"><br>
+    <label for="Other"> Other :</label>
+    <input type="radio" id="Other" name="Gender"><br><br>
+
+   <label>Category :</label>
+    <select name="Category" id="Category" style="margin-left: 100px;"> 
+        <option value="Category">General</option>
+        <option value="Category">OBC NCL</option>
+        <option value="Category">SC</option>
+        <option value="Category">ST</option>
+    </select><br><br>
+    <label for="Alternative_email">Alternative Email :</label>
+    <input type="text" id="Alternative_email" style="margin-left: 46px;"><br><br>
+    <label for="number"> Mobile No :</label>
+    <input type="text" id="number" placeholder=" +91" style="margin-left: 90px;"><br><br>
+    <label>Blood Group :</label>
+    <!-- <label for="A"> A :</label>
+    <input type="radio" id="A" name="Blood"><br>
+    <label for="B"> B :</label>
+    <input type="radio" id="B" name="Blood"><br>
+    <label for="AB"> AB :</label>
+    <input type="radio" id="AB" name="Blood"><br>
+    <label for="A+"> A+:</label>
+    <input type="radio" id="A+" name="Blood"><br> -->
+    <select name="blood_group" id="Blood" style="margin-left: 73px;">
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="AB">AB</option>
+        <option value="AB+">AB+</option>
+        <option value="AB-">AB-</option>
+        <option value="A-">A-</option>
+        <option value="A+">A+</option>
+        <option value="O+">O+</option>
+        <option value="O-">O-</option>
+
+    </select><br><br>
+    <label>Religion :</label>
+    <select style="margin-left: 100px;" name="Religion" id="Religion" >
+    <option value="Hindu">Hindu</option>
+    <option value="Muslim">Muslim</option>
+    <option value="Sikh">Sikh</option>
+    <option value="Cristean">Cristean</option>
+    </select>
+    <h4>Place Of Birth Details</h4>
+<label for="Address"> Villege/Town/City*</label>
+<input type="text" id="Address" style="margin-left: 40px;"><BR></BR>
+<label for="Country"> Country*</label>
+<select name="" id="Country" style="margin-left: 105px;">
+    <option value="India">India</option>
+    <option value="United Kingdom">United Kingdom</option>
+    <option value="United State">United State</option>
+    <option value="French">French</option>
+    <option value="Germany">Germany</option>
+    <option value="Uae">UAE</option>
+    <option value="NEWZELAND">NEWZELAND</option>
+</select><br><br>
+<label > State :</label >
+<select name="" id="State" style="margin-left: 120px;">
+ 
+
+    <option value="State">Andhra Pradesh</option>
+    <option value="State">Arunachal Pradesh</option>
+    <option value="State">Assam</option>
+    <option value="State">Bihar</option>
+    <option value="State">Chhattisgarh</option>
+    <option value="State">Goa</option>
+    <option value="State">Gujarat</option>
+    <option value="State">Haryana</option>
+    <option value="State">Himanchal Pardesh</option>
+    <option value="State">Jharkhand</option>
+    <option value="State">Karnataka</option>
+    <option value="State">Kerala</option>
+    <option value="State">Madhya Pardesh</option>
+    <option value="State">Maharashtra</option>
+
+    <option value="State">Manipur</option>
+    <option value="State">	Meghalaya</option>
+    <option value="State">Mizoram</option>
+    <option value="State">Nagaland</option>
+    <option value="State">	Odisha</option>
+    <option value="State">	Punjab</option>
+    <option value="State">	Rajasthan</option>
+    <option value="State">Sikkim</option>
+    <option value="State">Tamil Nadu</option>
+    <option value="State">Telangana</option>
+    <option value="State">	Tripura</option>
+    <option value="State">Uttar Pradesh</option>
+    <option value="State">Uttarakhand</option>
+    <option value="State">West Bengal</option>
+    <option value="State">Andaman and Nicobar Islands</option>
+    <option value="State">	Delhi</option>
+    <option value="State">Chandigarh</option>
+    <option value="State">Jammu and Kashmir</option>
+    <option value="State">	Ladakh</option>
+    <option value="State">Lakshadweep</option>
+    <option value="State">	Puducherry</option>
+
+</select>
+<br><br>
+<label >Distict*</label>
+<select name="" id="" style="margin-left: 110px;">
+    <option value="">Gorakhpur</option>
+    <option value="Maharajganj">Maharajganj</option>
+</select>
+<br>
+
+<h4>Family Details </h4>
+<label for="Mother_name">Mother's Name :</label>
+<input style="margin-left: 50px;" type="text" id="Mother_name">
+<br><br>
+<label for="Hindi">Mother's Name Hindi :</label>
+<input style="margin-left: 10px;" type="text" id="Hindi"><br><br>
+<label for="Qualification"> Mother's Qualification :</label>
+<Select style="margin-left: 8px;">
+    <option value="placeholder">UG</option>
+    <option value="placeholder">PG</option>
+    <option value="">Housewife</option>
+    <option value="">Govt Servent</option>
+</Select><br><br>
+<label for="">Mother's Occupation :</label>
+<select name="" id="" style="margin-left: 20px;" >
+    <option  > select</option>
+    <option value="">Farmer</option>
+</select><br><br>
+<label for="number">Mother's Mobile No :</label>
+<input type="text" id="number" placeholder="+91" style="margin-left: 22px;">
+    <br><br>
+   <label for="Address">Mother's Office Address :</label>
+   <input type="text" id="Address" placeholder="Office Address">
+   <br><br>
+   <h4>Father's Details</h4> 
+   <label for="Name">Father's Name :</label>
+   <input type="text" id="Name" style="margin-left: 37px;" >
+   <br><br>
+   <label for="fn">Father's Name Hindi :</label>
+   <input type="text" id="fn" placeholder="Father's Name">
+   <br><br>
+   <label for="Qualification">Father's Qualification :</label>
+   <select name="" id="Qualification">
+    <option value="">Select</option>
+    <option value=""> UG</option>
+    <option value="">PG</option>
+   </select>
+   <br><br>
+   <label for="Occupation">Father's Occupation :</label>
+   <select name="" id="Occupation" style="margin-left: 10px;">
+    <option value="">Farmer</option>
+   </select>
+<br><br>
+<label for=" number">Father's Mo No</label>
+<input type="text" id="number" placeholder="+91" style="margin-left: 43px;">
+<br><br>
+<label for=" Add"> Father's Office Add :</label>
+<input type="text" id="Add" style="margin-left: 10px;" placeholder="Office Address">
+<h4>Language Proficiency</h4>
+<h4>English</h4>
+<label for="Reading">Reading :</label>
+<input id="Reading" type="checkbox" style="margin-left: 10px;">
+<br>
+<label for="Writing">Writing :</label>
+<input id="Writing" type="checkbox" style="margin-left: 13px;">
+<br>
+<label for="Speaking">Speaking :</label>
+<input type="checkbox" id="Speaking">
+
+<h4>Hindi</h4>
+<label for="Readin">Reading :</label>
+<input type="checkbox" id="Readin" style="margin-left: 10px;">
+<br>
+<label for="Writin">Writing :</label>
+<input type="checkbox" name="" id="Writin" style="margin-left: 13px;">
+<br>
+<label for="Speakin">Speaking :</label>
+<input type="checkbox" id="Speakin">
+<br>
+<h3>Skill</h3>
+<label for="DSA"> DSA</label>
+<input type="checkbox" id="DSA">
+<label for="Devlop" style="margin-left: 20px;">Front End Devlopment</label>
+<input type="checkbox" id="Devlop">
+
+<label for="Backend" style="margin-left: 20px;">Backend Devlopment</label>
+<input type="checkbox" id="Backend">
+
+<label for="Full Stack" style="margin-left: 20px;"> Full Stack</label>
+<input type="checkbox" id="Full Stack">
+
+<label for="aiml" style="margin-left: 20px;">AI/ML</label>
+<input type="checkbox" id="aiml">
+
+<label for="cloud" style="margin-left: 20px;"> Cloud Computing</label>
+<input type="checkbox" id="cloud">
+<br><br>
+<label for="Cyber" style="margin-left: 20px;"> Cyber Security</label>
+<input type="checkbox" id="Cyber">
+
+<label for="Comm" style="margin-left: 20px;"/> Communication Skill</label>
+<input type="checkbox" id="Comm"/>
+
+<label for="blockchain" style="margin-left: 20px;"> Blockchain</label>
+<input type="checkbox" id="blockchain">
+
+<label for="Graphic" style="margin-left: 20px;"> Graphic Design</label>
+<input type="checkbox" id="Graphic">
+
+<label for="App" style="margin-left: 20px;"> App Devlopment
+</label>
+<input type="checkbox" id="App">
+<h3>Uplode Section</h3>
+<label for="image">Image :</label>
+<input type="file" id="image" style="margin-left: 50px;"><br><br>
+
+<label for="Signeture"> Signeture :</label>
+<input type="file" name="" id="Signeture" style="margin-left: 30px;">
+<br><br>
+<label for="identety"> Identety Proof :</label>
+<input type="file" name="" id="identety" >
+<br><br>
+<h2>REMARK :</h2>
+<label for="about"> Describe Us :</label>
+<br>
+<textarea name="" id="about" placeholder="Massage About Us ......."></textarea>
+<br>
+<button>Submit</button>
+<button>Clear</button>
+</form>
+</body>
+</html>
